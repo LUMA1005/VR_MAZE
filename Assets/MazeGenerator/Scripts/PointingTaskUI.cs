@@ -1,24 +1,28 @@
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
+using TMPro;
 public class PointingTaskUI : MonoBehaviour
 {
-    public TextMeshProUGUI taskHintText; // 拖入你Canvas中的文本UI
+    public TMP_Text hintText;
 
-    public void ShowTaskHint()
+
+    public void ShowTaskHint(string message)
     {
-        if (taskHintText != null)
+        Debug.Log("ShowTaskHint called with: " + message);
+        if (hintText != null)
         {
-            taskHintText.text = $"请你指向起点位置";
-            taskHintText.gameObject.SetActive(true);
+            hintText.text = "TEST";
+            hintText.enabled = true;
         }
     }
 
+
     public void HideTaskHint()
     {
-        if (taskHintText != null)
+        if (hintText != null)
         {
-            taskHintText.gameObject.SetActive(false);
+            hintText.enabled = false;
         }
     }
 }
