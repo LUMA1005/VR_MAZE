@@ -1,0 +1,17 @@
+Temp/
+Library/
+Logs/
+Obj/
+Build/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
